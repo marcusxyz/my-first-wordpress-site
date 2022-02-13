@@ -1,0 +1,68 @@
+:root {
+    /* Colors */
+    --black: #000;
+    --white: #fff;
+    --beige: #f6f3ef;
+    --light-grey: #f9f8f7;
+    --medium-grey: #616161;
+
+    /* Fonts weights */
+    --regular: Diatype;
+
+    /* Fonts sizes */
+    --base-size: 16px;
+    --h1: 7.5rem;
+    --h2: 3.5rem;
+    --h3: 2rem;
+    --h4: 1.5rem;
+    --p: 1rem;
+    --p-small: 0.875rem;
+    --p-large: 1.25rem;
+}
+
+/*--- Headings and paragraphs ---*/
+
+@font-face {
+    font-family: 'Diatype';
+    src: url(../fonts/ABCDiatype-Regular-Trial.woff2);
+} 
+  
+/*--- General ---*/
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+body {
+    background-color: var(--white);
+    font-family: var(--regular);
+    color: var(--black);
+    line-height: 1.5;
+}
+
+main {
+    padding: 0 2.5rem;
+}
+
+/*--- Text styles --*/
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.55;
+}
+
+p {
+    font-size: var(--p);
+}
+
+h1 {
+    font-size: var(--h1);
+    line-height: 1.125;
+}

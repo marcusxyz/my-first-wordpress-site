@@ -1,0 +1,85 @@
+/* Hero */
+
+section.hero {
+    padding: 7.5rem 0;
+}
+
+.section-title {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Selected project */
+
+section.selected-projects {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--black);
+}
+  
+.project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin: 5rem 0;
+}
+  
+.project-card {
+    width: calc(50% - 20px);
+    height: 100vh;
+}
+
+.project-card:nth-child(2) {
+    margin-top: 5rem;
+}
+  
+.project-card a {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+  
+.project-card a:hover {
+    opacity: 0.9;
+}
+
+.project-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    color: var(--white);
+}
+
+.project-description {
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+}
+
+.project-description h3 {
+    font-size: var(--h3);
+}
+
+/* Project list thumbnails */
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    z-index: -1;
+    /* background-color: red; */
+}
+
+.project-thumbnail img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

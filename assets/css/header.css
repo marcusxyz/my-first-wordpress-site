@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.5rem;
+}
+
+nav a, nav p {
+    font-size: 1.25rem;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
