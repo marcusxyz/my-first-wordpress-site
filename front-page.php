@@ -18,6 +18,7 @@
     // List selected projects
     $args = [
         'order' => 'desc',
+        'numberposts' => 6,
     ];
 
     $selectedProjects = get_posts($args);
@@ -25,7 +26,7 @@
 
 <section class="selected-projects">
     <div class="section-title">
-        Section title
+        Selected projects
     </div>
         <div class="project-card-container">
             <?php foreach ($selectedProjects as $post) : setup_postdata($post); ?>
@@ -33,7 +34,7 @@
                     <a href="<?php the_permalink(); ?>">
                         <div class="project-content">
                             <div class="tag-white">
-                                Taxonomi
+                                <p>Taxonomi</p>
                             </div>
                             <div class="project-description">
                                 <h3 class=""><?php the_title(); ?></h3>
